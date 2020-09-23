@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&family=Raleway&family=Rubik&display=swap");
+/* Sass Template  */
+/* global classes */
+
+body{
+  background-color:#e6e6fa !important;
+}
+button, button:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* typography classes */
+.font-baloo {
+  font-family: "Baloo Thambi 2", cursive;
+}
+
+.font-rale {
+  font-family: "Raleway", cursive;
+}
+
+.font-rubik {
+  font-family: "Rubik", cursive;
+}
+
+.font-size-12 {
+  font-size: 12px;
+}
+
+.font-size-14 {
+  font-size: 14px;
+}
+
+.font-size-16 {
+  font-size: 16px;
+}
+
+.font-size-18 {
+  font-size: 18px;
+}
+
+.font-size-20 {
+  font-size: 20px;
+}
+
+/* Color Template */
+.color-primary {
+  color: #003859;
+}
+
+.color-primary-bg {
+  background: #003859;
+}
+
+.color-second {
+  color: #407294;
+}
+
+.color-second-bg {
+  background: #407294;
+}
+
+.color-yellow {
+  color: #FFD289;
+}
+
+.color-yellow-bg {
+  background: #FFD289;
+}
+
+/* All The Products Section */
+/*  top sale template   */
+#top-sale .owl-carousel .item .product a {
+  overflow: hidden;
+}
+#top-sale .owl-carousel .item .product img {
+  transition: transform 0.5s ease;
+}
+#top-sale .owl-carousel .item .product img:hover {
+  transform: scale(1.1);
+}
+#top-sale .owl-carousel .owl-nav button {
+  position: absolute;
+  top: 30%;
+  outline: none;
+}
+#top-sale .owl-carousel .owl-nav button.owl-prev {
+  left: 0;
+}
+#top-sale .owl-carousel .owl-nav button.owl-prev span,
+#top-sale .owl-carousel .owl-nav button.owl-next span {
+  font-size: 35px;
+  color: #003859;
+  padding: 0 1rem;
+}
+#top-sale .owl-carousel .owl-nav button.owl-prev span {
+  margin-left: -4rem;
+}
+#top-sale .owl-carousel .owl-nav button.owl-next {
+  right: 0;
+}
+#top-sale .owl-carousel .owl-nav button.owl-next span {
+  margin-right: -4rem;
+}
+
+.rounded {
+  border-radius: 1rem
+}
+
+.nav-pills .nav-link {
+  color: #555
+}
+
+.nav-pills .nav-link.active {
+  color: white
+}
+
+input[type="radio"] {
+  margin-right: 5px
+}
+
+.bold {
+  font-weight: bold
+}
+.navbar-brand{
+  font-family: yellowtail;
+  color: #FFD289 !important;
+  font-size:30px;
+}
+#mobile {
+  width: 218px !important;
+}
+.card-mobile{
+  width: 18rem;
+}
+.img-rsz{
+  /* min-height: 200px!important; */
+  margin-top: 5%;
+  height: 150px !important;
+}
+.txt-rsz{
+  margin-top: 20px;
+  height: 130px;
+}
+
+@media only screen and (max-width: 768px) {
+  #mobile {
+    display: inline-block !important;
+    width: 100% !important;
+    margin-right: 5px;
+  }
+  #mobile2 {
+   width:75% !important ;
+   padding-left: 25%;
+  }
+ 
+  .grid-item{
+    width: 48%!important;
+  }
+  .card-mobile{
+    width: max-content !important;
+    
+
+  }
+}
