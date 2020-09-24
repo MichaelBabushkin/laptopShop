@@ -81,6 +81,7 @@ $(document).ready(function () {
     let $qty_up = $(".qty .qty-up");
     let $qty_down = $(".qty .qty-down");
     let $deal_price = $("#deal-price");
+    var sum = $("#deal-price").text();
     // let $input = $(".qty .qty_input");
 
     // click on qty up button
@@ -88,10 +89,10 @@ $(document).ready(function () {
 
         let $input = $(`.qty_input[data-id='${$(this).data("id")}']`);
         let $price = $(`.product_price[data-id='${$(this).data("id")}']`);
-
         // change product price using ajax call
+        alert(sum);
         $.ajax({
-            url: "template/ajax.php",
+            url: "Template/ajax.php",
             type: 'post',
             data: {
                 itemid: $(this).data("id")
@@ -146,10 +147,12 @@ $(document).ready(function () {
                     // set subtotal price
                     let subtotal = parseInt($deal_price.text()) - parseInt(item_price);
                     $deal_price.text(subtotal.toFixed(2));
+                    
                 }
 
             }
         }); // closing ajax request
+    
     }); // closing qty down button
 
 });
@@ -178,6 +181,7 @@ $(document).ready(function(){
       });
     } // End if
   });
+
 });
 
 $(function() {

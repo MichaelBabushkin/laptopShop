@@ -100,8 +100,9 @@
                                 </h5>
  
                                 <a href="payment.php">
-                                 <?php $myVariable = $Cart->getSum($subTotal)?>
+                                 <?php $myVariable =  $Cart->getSum($subTotal)?>
                                         <form method="post" action="payment.php">
+                                           
                                             <input type="hidden" name="text" value="<?php echo $myVariable; ?>">
                                  <button type="submit" class="btn btn-warning mt-3">Proceed to Buy</button>
                                 </form> 

@@ -80,16 +80,7 @@ public function getSum($arr){
         return sprintf('%.2f' , $sum);
     }
 }
-// update sub total
-public function updateSum($arr){
-    if(isset($arr)){
-        $sum = 0;
-        foreach ($arr as $item){
-            $sum += floatval($item[0]);
-        }     
-        return sprintf('%.2f' , $sum);
-    }
-}
+
 
 // get item_id of shopping cart list
 public function getCartId($cartArray = null, $key = "item_id"){
